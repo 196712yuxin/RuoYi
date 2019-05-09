@@ -6,9 +6,10 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: jdbc:mysql://localhost:3306/panda?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
+                url: jdbc:mysql://47.105.177.42:3306/panda?useUnicode=true&characterEncoding=utf8&useSSL=false&useAffectedRows=true
+                    #jdbc:mysql://47.105.177.42:3306/panda?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
                 username: root
-                password: Panda58
+                password: Root!!2018
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭
