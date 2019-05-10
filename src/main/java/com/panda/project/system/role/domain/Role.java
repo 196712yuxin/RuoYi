@@ -1,9 +1,11 @@
 package com.panda.project.system.role.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+/*import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;*/
 import com.panda.framework.aspectj.lang.annotation.Excel;
 import com.panda.framework.web.domain.BaseEntity;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 /**
  * 角色表 sys_role

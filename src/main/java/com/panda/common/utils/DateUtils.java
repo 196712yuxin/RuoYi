@@ -3,14 +3,14 @@ package com.panda.common.utils;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang.time.DateFormatUtils;
 
 /**
  * 时间工具类
  * 
  * @author panda
  */
-public class DateUtils extends org.apache.commons.lang3.time.DateUtils
+public class DateUtils extends org.apache.commons.lang.time.DateUtils
 {
     public static String YYYY = "yyyy";
 

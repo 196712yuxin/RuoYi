@@ -1,9 +1,10 @@
 package com.panda.project.system.dict.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+
 import com.panda.framework.aspectj.lang.annotation.Excel;
 import com.panda.framework.web.domain.BaseEntity;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 /**
  * 字典类型对象 sys_dict_type

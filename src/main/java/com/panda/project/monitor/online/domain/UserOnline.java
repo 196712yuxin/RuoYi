@@ -1,10 +1,11 @@
 package com.panda.project.monitor.online.domain;
 
 import java.util.Date;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+
 import com.panda.framework.web.domain.BaseEntity;
 import com.panda.project.monitor.online.domain.OnlineSession.OnlineStatus;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 /**
  * 当前在线会话 sys_user_online

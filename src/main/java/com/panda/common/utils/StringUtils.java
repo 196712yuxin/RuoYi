@@ -10,7 +10,7 @@ import com.panda.common.support.StrFormatter;
  * 
  * @author panda
  */
-public class StringUtils extends org.apache.commons.lang3.StringUtils
+public class StringUtils extends org.apache.commons.lang.StringUtils
 {
     /** 空字符串 */
     private static final String NULLSTR = "";

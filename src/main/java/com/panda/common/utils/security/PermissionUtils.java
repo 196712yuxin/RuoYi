@@ -1,6 +1,6 @@
 package com.panda.common.utils.security;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import com.panda.common.constant.PermissionConstants;
 import com.panda.common.utils.MessageUtils;
 
@@ -37,7 +37,7 @@ public class PermissionUtils
         {
             msg = MessageUtils.message("no.export.permission", permission);
         }
-        else if (StringUtils.endsWithAny(permission, new String[] { PermissionConstants.VIEW_PERMISSION, PermissionConstants.LIST_PERMISSION }))
+        else if (StringUtils.endsWith(permission, String.valueOf(new String[] { PermissionConstants.VIEW_PERMISSION, PermissionConstants.LIST_PERMISSION })))
         {
             msg = MessageUtils.message("no.view.permission", permission);
         }

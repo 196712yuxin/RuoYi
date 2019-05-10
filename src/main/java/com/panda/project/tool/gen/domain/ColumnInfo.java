@@ -59,7 +59,7 @@ public class ColumnInfo
     public void setColumnComment(String columnComment)
     {
         // 根据列描述解析列的配置信息
-        if (StringUtils.isNoneEmpty(columnComment) && columnComment.startsWith("{"))
+        if (com.panda.common.utils.StringUtils.isNotEmpty(columnComment) && columnComment.startsWith("{"))
         {
             this.configInfo = JSON.parseObject(columnComment, ColumnConfigInfo.class);
             this.columnComment = configInfo.getTitle();

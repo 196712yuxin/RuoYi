@@ -1,9 +1,11 @@
 package com.panda.project.system.post.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+/*import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;*/
 import com.panda.framework.aspectj.lang.annotation.Excel;
 import com.panda.framework.web.domain.BaseEntity;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 /**
  * 岗位表 sys_post
