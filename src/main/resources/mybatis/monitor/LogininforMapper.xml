@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.panda.project.monitor.logininfor.mapper.LogininforMapper">
 
-	<resultMap type="Logininfor" id="LogininforResult">
+	<resultMap type="com.panda.project.monitor.logininfor.domain.Logininfor" id="LogininforResult">
 		<id     property="infoId"        column="info_id"           />
 		<result property="loginName"     column="login_name"        />
 		<result property="status"        column="status"            />

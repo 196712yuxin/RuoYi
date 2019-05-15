@@ -34,7 +34,17 @@ public class LoginController extends BaseController
 
         return "login";
     }
+    @GetMapping("/register")
+    public String register(HttpServletRequest request, HttpServletResponse response)
+    {
+ /*       // 如果是Ajax请求，返回Json字符串。
+        if (ServletUtils.isAjaxRequest(request))
+        {
+            return ServletUtils.renderString(response, "{\"code\":\"1\",\"msg\":\"未登录或登录超时。请重新登录\"}");
+        }*/
 
+        return "register";
+    }
     @PostMapping("/login")
     @ResponseBody
     public AjaxResult ajaxLogin(String username, String password, Boolean rememberMe)
