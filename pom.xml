@@ -38,6 +38,7 @@
 		<swagger.version>2.7.0</swagger.version>
 		<jsoup.version>1.11.3</jsoup.version>
 		<poi.version>3.17</poi.version>
+        <dubbo.starter.version>0.2.0</dubbo.starter.version>
 		<!--<tomcat.version>8.5.31</tomcat.version>-->
 	</properties>
 
@@ -56,7 +57,31 @@
             </exclusions>-->
 
 		</dependency>
-
+        <dependency>
+			<groupId>com.panda</groupId>
+			<artifactId>panda-dubbo</artifactId>
+			<version>1.0-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+			<groupId>com.alibaba.boot</groupId>
+			<artifactId>dubbo-spring-boot-starter</artifactId>
+			<version>${dubbo.starter.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.13</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 		<!--<dependency>
 			<groupId>org.apache.tomcat</groupId>

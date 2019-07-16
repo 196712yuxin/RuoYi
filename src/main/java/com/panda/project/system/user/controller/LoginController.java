@@ -1,7 +1,9 @@
 package com.panda.project.system.user.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.panda.common.utils.ServletUtils;
+import com.panda.common.utils.StringUtils;
+import com.panda.framework.web.controller.BaseController;
+import com.panda.framework.web.domain.AjaxResult;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -10,10 +12,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.panda.common.utils.ServletUtils;
-import com.panda.common.utils.StringUtils;
-import com.panda.framework.web.controller.BaseController;
-import com.panda.framework.web.domain.AjaxResult;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.swing.text.html.parser.Entity;
+import java.util.*;
 
 /**
  * 登录验证
@@ -44,6 +47,30 @@ public class LoginController extends BaseController
         }*/
 
         return "register";
+    }
+    @GetMapping("/testMap")
+    public  Map<String,Object> testMap(HttpServletRequest request, HttpServletResponse response)
+    {
+        Map<String, Object> map = new HashMap<>();
+        for(String setd:map.keySet()){
+            map.get(setd);
+        }
+        for(Map.Entry<String, Object> en:map.entrySet()){
+            en.getKey();
+            en.getValue();
+        }
+        List<String> slist = new LinkedList<>();
+        slist.add("12132");
+        map.put("success", success());
+        Set<Map.Entry<String,Object>> set =map.entrySet();
+        List<Map.Entry<String, Object>> lists = new ArrayList<>(set);
+        Collections.sort(lists, new Comparator<Map.Entry<String, Object>>() {
+            @Override
+            public int compare(Map.Entry<String, Object> o1, Map.Entry<String, Object> o2) {
+                return 0;
+            }
+        });
+        return map;
     }
     @PostMapping("/login")
     @ResponseBody

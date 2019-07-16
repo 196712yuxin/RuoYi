@@ -1,8 +1,11 @@
 package com.panda.common.utils.bean;
 
+import com.alibaba.fastjson.JSON;
+
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -118,5 +121,27 @@ public class BeanUtils
     public static boolean isMethodPropEquals(String m1, String m2)
     {
         return m1.substring(BEAN_METHOD_PROP_INDEX).equals(m2.substring(BEAN_METHOD_PROP_INDEX));
+    }
+    public static  String objectToJsonString(Object obj){
+        if(obj==null){
+            return "";
+        }  else {
+            return  JSON.toJSONString(obj);
+        }
+    }
+
+    public static  String objectToJsonString(Object obj,Boolean florg){
+        short s1=1;s1 = (short) (s1+1);
+        s1 += 1;
+        StringBuffer buffer = new StringBuffer();
+        buffer.append(Payment.MANAGE);
+        buffer.append(Payment.asasasa);
+        Set<String> set = new LinkedHashSet<>();
+        set.add("fdfd");
+        LocalDateTime dt =LocalDateTime.now();
+        dt.getYear();
+        Clock.systemDefaultZone().millis();
+        return  JSON.toJSONString(obj);
+
     }
 }
